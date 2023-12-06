@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+body {
+  --sb-track-color: #424242;
+  --sb-thumb-color: #f6f6f6;
+  --sb-size: 5px;
+
+  scrollbar-color: var(--sb-thumb-color) 
+                   var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size) 
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 32px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 32px;
+  
+  }
+
+nav {
+    background-color: #484848;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5% 0 5%;
+}
+
+.main-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #FF9200;
+    height: 70vh;
+    width: 80%;
+    padding: 1%;
+    border-radius: 16px;
+}
+
+.food-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-food {
+    background-color: #fafafa;
+    min-height: 14vh;
+    width: 95%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2.5%;
+    margin-top: 5%;
+}
+#receitas-container{
+    overflow-y: scroll;
+    max-height: 100%;
+}
+
+.card-food-content {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    padding-left: 2.5%;
+}
+
+.card-food-check {
+    width: 10%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-food-title {
+    color: #fafafa;
+    font-size: 30px;
+    margin-bottom: 1%;
+}
+
+.card-food-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-food-text h4,
+.card-food-text p {
+    margin: 2.5% 0 2.5% 0;
+    width: 30vw;
+    text-align: start;
+}
+
+.search-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+.input-search {
+    padding: 20px;
+    background-color: #fafafa;
+    margin: 4%;
+    border: none;
+    width: 67%;
+    border-radius: 32px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.btn-food {
+  padding: 40% 60% 40% 60%;
+  background-color: #484848;
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f6f6f6;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.swal-edit h1{
+    font-weight: bolder;
+}
